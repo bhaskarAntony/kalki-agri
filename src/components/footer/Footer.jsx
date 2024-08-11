@@ -10,8 +10,8 @@ function Footer() {
             <img src={logo} alt="kalki agri" className='logo' data-aos="zoom-in"/>
             <div className="footer-icons">
                <Link to=""  target='_blank' data-aos="zoom-in"><i className='bi bi-facebook'></i></Link>
-              <Link to=""  target='_blank' data-aos="zoom-in"><i className='bi bi-instagram'></i></Link>
-              <Link to=""  target='_blank' data-aos="zoom-in"><i className='bi bi-whatsapp'></i></Link>
+              <Link to="https://www.instagram.com/kalki.agri?igsh=MTRkaDdmYTRhNGZwNw=="  target='_blank' data-aos="zoom-in"><i className='bi bi-instagram'></i></Link>
+              <Link to="https://whatsapp.com/channel/0029VakbaFG0lwgyvCjOiX2G"  target='_blank' data-aos="zoom-in"><i className='bi bi-whatsapp'></i></Link>
              <Link to=""  target='_blank' data-aos="zoom-in"><i className='bi bi-telegram'></i></Link>
             </div>
            
@@ -22,9 +22,9 @@ function Footer() {
                 <div className="col-md-4 mt-4">
                     <h1 className="fs-4 fw-bold text-light">Navigation</h1>
                     <ul typeof='none' className='p-0'>
-                        <li><Link to="/">About us</Link></li>
+                        <li><Link to="/about-us">About us</Link></li>
                         <li><Link to="/">Mission & Vision</Link></li>
-                        <li><Link to="/">Contact us</Link></li>
+                        <li><Link to="/contact-us">Contact us</Link></li>
                         <li><Link to="/">Benifits</Link></li>
                         <li><Link to="/">Privacy Policy</Link></li>
                     </ul>
@@ -47,7 +47,9 @@ function Footer() {
                         </li>
                         <li>
                         <h6 className="fs-5">Phone number</h6>
-                        <Link  to="#">+91 9606729320</Link>
+                        <Link  to="#">+91 9740885332</Link> 
+                        <br />
+                        <Link  to="#">+91 9036465175</Link>
                         </li>
                         <li>
                         <h6 className="fs-5">Address</h6>

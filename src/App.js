@@ -12,6 +12,7 @@ import Footer from './components/footer/Footer';
 import Aos from 'aos';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
+import ScrollToTop from './helpers/ScrollToTop';
 
 const App = () => {
     useEffect(()=>{
@@ -22,6 +23,7 @@ const App = () => {
        
      
         <Router>
+            <ScrollToTop/>
         <Link to="https://whatsapp.com/channel/0029VakbaFG0lwgyvCjOiX2G" className='whatsapp'>
      <img src={whatsappIcon} alt="whatsapp" />
      </Link>
