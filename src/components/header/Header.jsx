@@ -9,7 +9,7 @@ function Header() {
   <div class="container-fluid">
     <a class="navbar-brand text-light fs-3 d-flex align-items-center" href="/"> <img src={logo} alt="kalki agri" className='logo' /> <span className="fw-bold mt-2 d-block">KALKI <span className="text-orange">AGRI</span></span> </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <i className='bi bi-list fs-3 text-light'></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-lg-0 mt-1">
@@ -17,7 +17,7 @@ function Header() {
           <a class="nav-link" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" href="about-us">About us</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">vision/goal</a>
