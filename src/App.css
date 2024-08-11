@@ -117,7 +117,29 @@
   position: fixed;
   bottom: 10px;
   right: 10px;
+  z-index: 100;
 }
 .whatsapp img{
   width: 60px;
+}
+
+.banner-top{
+  background: url('./assets/images/wave-haikei.svg') no-repeat center bottom;
+  background-size: cover;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  align-items: center;
+}
+@media(max-width:576px){
+  .banner-top{
+  justify-content: center;
+  }
+}
+
+.form-control:focus{
+  box-shadow: none !important;
+  border: none !important;
 }

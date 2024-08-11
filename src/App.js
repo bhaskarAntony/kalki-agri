@@ -10,6 +10,8 @@ import Header from './components/header/Header';
 import whatsappIcon from './assets/images/whatsapp.png'
 import Footer from './components/footer/Footer';
 import Aos from 'aos';
+import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 
 const App = () => {
     useEffect(()=>{
@@ -29,6 +31,9 @@ const App = () => {
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/about-us" element={<About />} />
+                <Route path="/contact-us" element={<Contact />} />
+
                 <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
             </Routes>
             <Footer/>
