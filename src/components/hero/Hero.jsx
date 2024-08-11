@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 function Hero() {
   return (
-    <section className='hero container-fluid p-4 p-md-5 py-5'>
+    <section className='hero container-fluid p-3 p-md-5 py-5'>
         <div className="row">
             <div className="col-md-6">
                 <h1 className="fs-5" data-aos="fade-right">Innovative Marketing Solutions to Connect Farmers with Customers</h1>
