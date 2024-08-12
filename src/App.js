@@ -13,6 +13,10 @@ import Aos from 'aos';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import ScrollToTop from './helpers/ScrollToTop';
+import MarketandResearch from './pages/services/MarketandResearch';
+import Branding from './pages/services/Branding';
+import DigitalMarketing from './pages/services/DigitalMarketing';
+import Vision from './pages/vision/Vision';
 
 const App = () => {
     useEffect(()=>{
@@ -35,6 +39,11 @@ const App = () => {
                 <Route path="/register" element={<Register />} />
                 <Route path="/about-us" element={<About />} />
                 <Route path="/contact-us" element={<Contact />} />
+                <Route path='/market-research-agriculture' element={<MarketandResearch/>}/>
+                <Route path='/branding-and-advertising-services' element={<Branding/>}/>
+                <Route path='/digital-marketing-and-social-media-services' element={<DigitalMarketing />}/>
+                <Route path='/trade-show-and-event-promotion-services' element={<DigitalMarketing />}/>
+                <Route path='/vision' element={<Vision />}/>
 
                 <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
             </Routes>

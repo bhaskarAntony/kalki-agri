@@ -130,12 +130,16 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 10px;
   padding-top: 30px;
   align-items: center;
 }
 @media(max-width:576px){
   .banner-top{
   justify-content: center;
+  }
+  .service-container img{
+    width: 100% !important; 
   }
 }
 

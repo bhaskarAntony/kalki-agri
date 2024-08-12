@@ -23,19 +23,19 @@ function Footer() {
                     <h1 className="fs-4 fw-bold text-light">Navigation</h1>
                     <ul typeof='none' className='p-0'>
                         <li><Link to="/about-us">About us</Link></li>
-                        <li><Link to="/">Mission & Vision</Link></li>
+                        <li><Link to="/vision">Mission & Vision</Link></li>
                         <li><Link to="/contact-us">Contact us</Link></li>
-                        <li><Link to="/">Benifits</Link></li>
-                        <li><Link to="/">Privacy Policy</Link></li>
+                        {/* <li><Link to="/">Benifits</Link></li>
+                        <li><Link to="/">Privacy Policy</Link></li> */}
                     </ul>
                 </div>
                 <div className="col-md-4 mt-4">
                     <h1 className="fs-4 fw-bold text-light">Our Services</h1>
                     <ul typeof='none' className='p-0'>
-                    <li><Link  to="#">Market Research and Analysis</Link></li>
-                    <li><Link  to="#">Branding and Advertising</Link></li>
-                    <li><Link  to="#">Digital Marketing and Social Media</Link></li>
-                    <li><Link to="#">Trade Show and Event Promotion</Link></li>
+                    <li><Link  to="/market-research-agriculture">Market Research and Analysis</Link></li>
+                    <li><Link  to="/branding-and-advertising-services">Branding and Advertising</Link></li>
+                    <li><Link  to="/digital-marketing-and-social-media-services">Digital Marketing and Social Media</Link></li>
+                    <li><Link to="/trade-show-and-event-promotion-services">Trade Show and Event Promotion</Link></li>
                     </ul>
                 </div>
                 <div className="col-md-4 mt-4">
@@ -43,17 +43,18 @@ function Footer() {
                     <ul typeof='none' className='p-0'>
                     <li>
                         <h6 className="fs-5">Email</h6>
-                        <Link  to="#">Kalki.agri@gmail.com</Link>
+                        <Link  to="mainto:Kalki.agri@gmail.com">Kalki.agri@gmail.com</Link>
                         </li>
                         <li>
                         <h6 className="fs-5">Phone number</h6>
-                        <Link  to="#">+91 9740885332</Link> 
+                        <Link  to="tel:+919740885332">+91 9740885332</Link> 
                         <br />
-                        <Link  to="#">+91 9036465175</Link>
+                        <Link  to="tel:+919036465175">+91 9036465175</Link>
                         </li>
                         <li>
                         <h6 className="fs-5">Address</h6>
-                        <span className="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ab obcaecati autem ex quaerat excepturi!</span>
+                        <Link to="https://www.google.com/maps/place/Kodihalli+Village,+Karnataka+561203/@13.3106257,77.5866991,18z/data=!4m6!3m5!1s0x3bb1e0c11f61181b:0xa61ea157661c59f4!8m2!3d13.3102905!4d77.5880899!16s%2Fg%2F1w6r6qpj?entry=ttu">  <span className="fs-6">Kodihalli village, Kalalughatta post, Thymagodlu Hobli, Nelamangala taluk, Bangalore Rural -562132</span></Link>
+                      
                         </li>
                     </ul>
                 </div>

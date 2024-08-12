@@ -20,17 +20,17 @@ function Header() {
           <a class="nav-link" href="about-us">About us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">vision/goal</a>
+          <a class="nav-link" href="/vision">vision/goal</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Market Research and Analysis</a></li>
-            <li><a class="dropdown-item" href="#">Branding and Advertising</a></li>
-            <li><a class="dropdown-item" href="#">Digital Marketing and Social Media</a></li>
-            <li><a class="dropdown-item" href="#">Trade Show and Event Promotion</a></li>
+            <li><a class="dropdown-item" href="/market-research-agriculture">Market Research and Analysis</a></li>
+            <li><a class="dropdown-item" href="/branding-and-advertising-services">Branding and Advertising</a></li>
+            <li><a class="dropdown-item" href="/digital-marketing-and-social-media-services">Digital Marketing and Social Media</a></li>
+            <li><a class="dropdown-item" href="/trade-show-and-event-promotion-services">Trade Show and Event Promotion</a></li>
           </ul>
         </li>
         <li class="nav-item">

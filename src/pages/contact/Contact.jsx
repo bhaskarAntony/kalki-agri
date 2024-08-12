@@ -44,7 +44,7 @@ function Contact() {
                     <i class="bi bi-geo-alt"></i>
                     <div>
                         <span className="fs-5 fw-bold text-green">Address</span><br />
-                        <span className="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore culpa ullam voluptas aut, quidem nulla?</span>
+                        <span className="fs-6">Kodihalli village, Kalalughatta post, Thymagodlu Hobli, Nelamangala taluk, Bangalore Rural -562132</span>
                       
                     </div>
                     </li>
@@ -54,7 +54,7 @@ function Contact() {
        </div>
 
        <div className="bg-green1 p-3 p-md-5">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31108.632150194666!2d77.53224314549702!3d12.934756969201743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e2c22c358b7%3A0x157068107f36f2ef!2sBanashankari%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1723383399898!5m2!1sen!2sin" width="600" height="450" className="border-0 rounded-4 w-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1941.318304907099!2d77.58669913835062!3d13.310625656916546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb1e0c11f61181b%3A0xa61ea157661c59f4!2sKodihalli%20Village%2C%20Karnataka%20561203!5e0!3m2!1sen!2sin!4v1723438210467!5m2!1sen!2sin" width="600" height="450" className="border-0 rounded-4 w-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
        </div>
        <Feedback/>
     </section>
