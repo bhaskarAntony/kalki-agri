@@ -7,11 +7,14 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle.js'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'aos/dist/aos.css';
+import { LanguageProvider } from './components/hooks/LanguageContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <LanguageProvider>
+    <App/>
+   </LanguageProvider>
   </React.StrictMode>
 );
 
