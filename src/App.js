@@ -18,6 +18,7 @@ import Branding from './pages/services/Branding';
 import DigitalMarketing from './pages/services/DigitalMarketing';
 import Vision from './pages/vision/Vision';
 import Seller from './pages/seller/Seller';
+import Buyer from './pages/buyer/Buyer';
 
 const App = () => {
     useEffect(()=>{
@@ -45,6 +46,7 @@ const App = () => {
                 <Route path='/digital-marketing-and-social-media-services' element={<DigitalMarketing />}/>
                 <Route path='/trade-show-and-event-promotion-services' element={<MarketandResearch />}/>
                 <Route path='/vision' element={<Vision />}/>
+                <Route path='/buyer-form' element={<Buyer />}/>
                 <Route path='/seller-form' element={<Seller />}/>
 
                 <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />

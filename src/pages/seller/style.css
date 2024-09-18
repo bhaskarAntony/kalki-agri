@@ -1,0 +1,204 @@
+/* .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.2rem;
+  } */
+  
+
+  
+  .form-container form .align-form {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 1.2rem;
+  }
+  
+  .fpo-section {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+  }
+  
+  .fpo-section.show {
+    opacity: 1;
+    max-height: fit-content !important; /* Adjust based on content size */
+  }
+  
+  .submit-btn,
+  .clear-btn,
+  .submit-btn-1 {
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    background-color: var(--green-900);
+    color: var(--white-88);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clear-btn {
+  }
+  
+  .submit-btn:hover {
+    opacity: 0.7;
+  }
+  
+  .clear-btn:hover {
+    opacity: 0.7;
+  }
+  
+  .submit-btn-1:hover {
+    opacity: 0.7;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .form-container label {
+    /* margin-top: 5%; */
+  }
+  .form-container input {
+    /* margin-left: 30px; */
+    justify-self: right;
+    width: 85%;
+    padding: 10px 0px 10px 8px;
+    border: 2px solid var(--green-900);
+    border-radius: 5px;
+  }
+  
+  .form-container textarea {
+    /* margin-left: 30px; */
+    justify-self: right;
+    padding: 5px;
+    width: 85%;
+    padding: 10px 0px 10px 8px;
+    border: 2px solid var(--green-900);
+    border-radius: 5px;
+    min-height: 45px;
+    max-height: 130px;
+    border: none !important;
+    border: 1px solid #ccc;
+  }
+  
+  .my-100 {
+    width: 100%;
+  }
+  
+  .form-container input::placeholder{
+    font-size: 1.1rem;
+    
+  }
+  
+  .form-container input:focus,
+  .form-container textarea:focus {
+    box-shadow: inset 0px -3px 0px var(--green-900);
+    padding: 10px 0px 10px 8px;
+    font-size: 1.1rem;
+  }
+  
+  .Yes-No {
+    display: flex;
+    justify-self: center;
+  }
+  .Yes-No input:focus,
+  .fpo-section-checkbox input:focus {
+    box-shadow: none;
+  }
+  
+  .Yes-No input {
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  .fpo-section-checkbox input {
+    width: 15px;
+    height: 15px;
+    margin: 0px 0px 0px 0px;
+    cursor: pointer;
+    accent-color: var(--green-900);
+  }
+  
+  .fpo-section-form {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 1.2rem;
+    margin: 30px 0;
+  }
+  .about-container input {
+    justify-self: right;
+    padding: 10px 0px 10px 6px;
+    border: none !important;
+    border: 1px solid #ccc !important;
+  }
+  
+  .fpo-section-checkbox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 35px 0;
+    
+  }
+  .fpo-section-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* width: 100%; */
+  }
+  
+  .submit-btn-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .fpo-section-form input {
+   
+    justify-self: right;
+    width: 85%;
+    padding: 10px 0px 10px 8px;
+    border: 2px solid var(--green-900);
+    border-radius: 5px;
+  }
+  .fpo-section-checkbox span{
+    font-weight: bold;
+   
+  }
+  .about-container .submit-btn-1{
+    width: 100%;
+  }
+
+  @media(max-width:768px){
+    .about-container .align-form, .about-container .fpo-section-form{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: start !important;
+        gap: 5px !important;
+        min-height: fit-content !important;
+        margin: 0px;
+    }
+    .align-form label{
+        margin-top: 10px !important;
+    }
+    .align-form input, .align-form textarea, .fpo-section-form input, .fpo-section-form textarea{
+        width: 100%;
+    }
+ 
+    .fpo-section-button{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .fpo-section-button button{
+        width: 100%;
+    }
+   
+  }
