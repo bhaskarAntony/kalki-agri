@@ -2,6 +2,7 @@ import React from 'react'
 import './style.css'
 import logo from '../../assets/images/logo.jpeg'
 import { useLanguage } from '../hooks/LanguageContext'
+import { Link } from 'react-router-dom';
 
 function Header() {
   const { isKannada, setIsKannada } = useLanguage();
@@ -26,13 +27,19 @@ function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-lg-0 mt-1">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">{isKannada ? 'ಮನೆ' : 'Home'}</a>
+                <a className="nav-link" aria-current="page" href="/">{isKannada ? 'ಮನೆ' : 'Home'}</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="about-us">{isKannada ? 'ನಮ್ಮ ಬಗ್ಗೆ' : 'About us'}</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/vision">{isKannada ? 'ದೃಷ್ಟಿಕೋನ/ಲಕ್ಷ್ಯ' : 'Vision/Goal'}</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" aria-current="page" href="/buyer-form">{isKannada ? 'ನೀವು ಖರೀದಿದಾರರೇ?' : 'Are you buyer?'}</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" aria-current="page" href="/seller-form">{isKannada ? 'ನೀವು ಮಾರಾಟಗಾರರೇ?' : 'Are you seller?'}</a>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -50,7 +57,7 @@ function Header() {
               </li>
             </ul>
             <form className="d-flex">
-              <button className="btn-orange px-4 py-2" type="submit">{isKannada ? 'ನೋಂದಣಿ' : 'Register'}</button>
+              <Link to="/register" className="btn-orange px-4 py-2" >{isKannada ? 'ನೋಂದಣಿ' : 'Register'}</Link>
             </form>
           </div>
         </div>

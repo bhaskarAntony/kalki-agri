@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "./style.css";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Seller() {
+  const [loading,setloading] = useState(false)
+  const navigate = useNavigate()
   const [isFPO, setIsFPO] = useState(false); 
   const [formData, setFormData] = useState({
     name: "",
@@ -9,6 +13,7 @@ function Seller() {
     district: "",
     state: "",
     contact: "",
+    isFpo:isFPO,
     fpoName: "",
     ceoName: "",
     fpoRegNo: "",
@@ -28,10 +33,23 @@ function Seller() {
     setIsFPO(e.target.value === "yes");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
+    setloading(true)
+   try {
     console.log(formData);
-    alert("Form Submitted!");
+    const response=await axios.post("https://kalkiagri-backend.onrender.com/api/new/kalki/seller",formData)
+    if(response.status==200){
+      setloading(false)
+      alert("Form Submitted!");
+      navigate("/")
+
+    }
+    
+   } catch (error) {
+    console.log(error)
+    setloading(false)
+   }
   };
 
   const handleClear = () => {
@@ -41,6 +59,7 @@ function Seller() {
       district: "",
       state: "",
       contact: "",
+      isFpo:"",
       fpoName: "",
       ceoName: "",
       fpoRegNo: "",
@@ -185,7 +204,9 @@ function Seller() {
           </div>
           
           <button type="submit" className="submit-btn-1">
-            Register
+            {
+              loading?"Please wait...":"Register"
+            }
           </button>
          
         </form>

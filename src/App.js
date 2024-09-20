@@ -19,6 +19,7 @@ import DigitalMarketing from './pages/services/DigitalMarketing';
 import Vision from './pages/vision/Vision';
 import Seller from './pages/seller/Seller';
 import Buyer from './pages/buyer/Buyer';
+import Registration from './pages/registration/Registration';
 
 const App = () => {
     useEffect(()=>{
@@ -38,7 +39,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
+                <Route path="/register" element={<Registration />} />
                 <Route path="/about-us" element={<About />} />
                 <Route path="/contact-us" element={<Contact />} />
                 <Route path='/market-research-agriculture' element={<MarketandResearch/>}/>
